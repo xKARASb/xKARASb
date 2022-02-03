@@ -1,7 +1,6 @@
 import discord
-from disco.api.client import APIClient
 
-client = APIClient('OTM4MTAwMTI3MjI1MjI5MzQz.YflX0w.pUAaJm0uzfQ8OBRPpahEvNyRbiE')
+client = discord.Client()
 
 @client.event
 async def on_ready():
@@ -76,3 +75,5 @@ async def on_reaction_remove(reaction, user):
         return
   else:
       return
+
+client.run('OTM4MTAwMTI3MjI1MjI5MzQz.YflX0w.pUAaJm0uzfQ8OBRPpahEvNyRbiE')
